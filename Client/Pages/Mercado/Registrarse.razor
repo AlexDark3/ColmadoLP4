@@ -1,0 +1,22 @@
+@page "/Registro"
+<h1>LLena los siguientes campos</h1>
+
+<th>Nombre Completo</th>
+<input type="text">
+<th>Correo </th>
+<input type="text">
+<th>Contraseña</th>
+<input type="password">
+<th>De nuevo Contraseña</th>
+<input type="password">
+<br>
+<button class="btn btn-primary"@onclick="Inicio">Guardar</button>
+<button class="btn btn-primary"@onclick="Inicio">Salir</button>
+@code{
+
+    public void Inicio(){
+
+    Cambio.NavigateTo("/Login");
+
+}
+}

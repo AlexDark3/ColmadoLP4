@@ -1,0 +1,48 @@
+@page "/Listar"
+<h1>Ventas de productos</h1>
+<th class="btn btn-primary" @onclick="Regreso">Regresar</th>
+<br>
+
+<th>Nombre del Cliente</th>      
+       <input type="text">
+        <th> Nombre </th>
+       <input type="text">
+        <th>Codigo</th>
+       <input type="text">
+         <th>Costo</th>
+          <input type="text">
+         <th>Fecha</th>
+         <input type="text">
+         <th>Cantidad</th>
+         <input type="text">
+       
+         <button class="btn btn-primary">Enviar</button>
+          <button class="btn btn-primary">Calcular</button>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre </th>
+                <th>Codigo</th>
+                <th>Costo</th>
+                <th>Fecha</th>
+                <th>Nombre del Cliente</th>
+                <th>Cantidad</th>
+                 <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+   
+
+    @code{
+        public void Regreso()
+    {
+    
+    Cambio.NavigateTo("/Vista");
+
+}
+    }
