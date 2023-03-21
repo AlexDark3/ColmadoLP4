@@ -9,19 +9,19 @@
    <label class="btn btn-primary"@onclick="Regis">Registrarse</label>
    <br>
    <br>
-   <button class="btn btn-primary"@onclick="Registrar">Acceder</button>
+   <button class="btn btn-primary" @onclick = "Registrar">Acceder</button>
 @code
 {
 
-public void Registrar(){
+ public void Registrar(){
 
-    Cambio.NavigateTo("/Vista");
+    urlHelper.NavigateTo("/Vista");
 
-}
-public void Regis(){
+ }
+ public void Regis(){
 
-    Cambio.NavigateTo("/Registro");
+    urlHelper.NavigateTo("/Registro");
 
-}
+ }
 
 }

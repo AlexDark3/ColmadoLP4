@@ -1,44 +1,39 @@
 @page "/Productos"
-< h1 > Registrar productos </ h1 >
+<h1> Registrar productos </h1>
 
-< th class= "btn btn-primary" @onclick = "Regreso" > Regresar </ th >
-< br >
+<th class= "btn btn-primary" @onclick = "Regreso"> Regresar </th>
+<br>
 
-   < th > Producto </ th >
-        < th > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</ th >
-        < th > Codigo </ th >
-        < th > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</ th >
-        < th > Costo </ th >
-         < th > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</ th >
-         < th > Cantidad </ th >
-         < input type = "text" >
-         < input type = "text" >
-         < input type = "text" >
-         < input type = "text" >
-         < button class= "btn btn-primary" > Enviar </ button >
-          < button class= "btn btn-primary" > Calcular </ button >
-    < table class= "table" >
-        < thead >
-            < tr >
-                < th > Id </ th >
-                < th > Nombre </ th >
-                < th > Codigo </ th >
-                < th > Costo </ th >
-                < th > Cantidad </ th >
-                < th > Total </ th >
-            </ tr >
-        </ thead >
-        < tbody >
+   <th> Producto </th>
+         <th> Cantidad </th>
+         <input type = "text">
+         <input type = "text">
+         <input type = "text">
+         <input type = "text">
+         <button class= "btn btn-primary"> Enviar </button>
+          <button class= "btn btn-primary"> Calcular </button>
+    <table class= "table">
+        <thead>
+            <tr>
+                <th> Id </th>
+                <th> Nombre </th>
+                <th> Codigo </th>
+                <th> Costo </th>
+                <th> Cantidad </th>
+                <th> Total </th>
+            </tr>
+        </thead>
+        <tbody>
 
 
-        </ tbody >
-    </ table >
+        </tbody>
+    </table>
 
  @code{
     public void Regreso()
     {
 
-        Cambio.NavigateTo("/Vista");
+        urlHelper.NavigateTo("/Vista");
 
     }
 }

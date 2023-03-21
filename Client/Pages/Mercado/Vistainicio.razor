@@ -1,11 +1,9 @@
 @page "/vista"
-< h1 > Bienvenido a la hora elaboral que desea realizar</h1>
-<thead>
-  <button class= "btn btn-primary"@onclick = "Productos" > Registrar productos </ button > < th > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</ th >
-< button  class= "btn btn-primary"@onclick = "Ventas" > Realizar Ventas </ button >
-</ thead >
-< br >
-< th class= "btn btn-primary" @onclick = "Salir" > Salir </ th >
+<h1> Bienvenido a la hora elaboral que desea realizar</h1>
+  <button class= "btn btn-primary" @onclick = "Productos"> Registrar productos </button> 
+  <button  class= "btn btn-primary" @onclick = "Ventas"> Realizar Ventas </button >
+<br>
+<button class= "btn btn-primary" @onclick = "Salir" > Salir </button>
 
 
 @code
@@ -13,19 +11,19 @@
     public void Productos()
     {
 
-        Cambio.NavigateTo("/Productos");
+        urlHelper.NavigateTo("/Productos");
 
     }
     public void Ventas()
     {
 
-        Cambio.NavigateTo("/Listar");
+        urlHelper.NavigateTo("/Listar");
 
     }
     public void Salir()
     {
 
-        Cambio.NavigateTo("/Login");
+        urlHelper.NavigateTo("/Login");
 
     }
 }

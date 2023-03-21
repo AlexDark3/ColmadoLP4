@@ -14,9 +14,10 @@
 <button class="btn btn-primary"@onclick="Inicio">Salir</button>
 @code{
 
-    public void Inicio(){
+    public void Inicio()
+    {
 
-    Cambio.NavigateTo("/Login");
+    urlHelper.NavigateTo("/Login");
 
-}
+   }
 }
